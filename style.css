@@ -20,6 +20,11 @@ h1 {
 .box {
     background-color: #df2e2e;
     border: 10px solid #df2e2e;
+    transition: transform 0.3s ease;
+}
+
+.box:hover{
+    transform: scale(1.1);
 }
 
 .grid-container{
