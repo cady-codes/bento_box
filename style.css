@@ -1,0 +1,84 @@
+*{
+    background-color: #1d2024;
+}
+
+body {
+    min-width: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+h1 {
+    color: #df2e2e;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+.box {
+    background-color: #df2e2e;
+    border: 10px solid #df2e2e;
+}
+
+.grid-container{
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    gap: 1em;
+    grid-template-areas: 
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-4 box-5 box-5";
+}
+
+@media(max-width: 60em){
+    .grid-container{
+        grid-template-areas: 
+        "box-1 box-1 box-2"
+        "box-1 box-1 box-3"
+        "box-4 box-5 box-5";
+    }
+}
+
+@media(max-width: 50em){
+    .grid-container{
+        grid-template-areas: 
+        "box-1 box-2"
+        "box-3 box-2"
+        "box-3 box-4"
+        "box-5 box-4";
+    }
+}
+
+#box1 {
+    background-image: url('https://t3.ftcdn.net/jpg/00/79/54/60/360_F_79546022_4j5WwFYNcsiaywekL9sF340RTQ1A85I3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #box2 {
+    background-image: url('https://www.theseasonedwok.com/wp-content/uploads/2023/03/ebi-tempura-f2-500x375.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #box3 {
+    background-image: url('https://kimurayadubai.com/wp-content/uploads/2022/09/sashimi-vs-raw-fish.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #box4 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0HsN7ddeV8s3kjHClUzYFBQULX25mPw35_g&s');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #box5 {
+    background-image: url('https://tiffycooks.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-21-at-5.21.37-PM.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+
